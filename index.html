@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal Portfolio of Md. Mahfujur Rahman - Full Stack Developer">
+    <title>Home - Personal Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 flex flex-col min-h-screen">
+
+    <nav class="navbar bg-white shadow-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 border border-slate-200">
+                    <li><a href="index.html" class="active font-bold text-blue-600">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-xl font-bold text-blue-600">Mahfujur.Dev</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html" class="font-bold border-b-2 border-blue-600 text-blue-600">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+                <li><a href="portfolio.html" class="hover:text-blue-600 transition">Portfolio</a></li>
+                <li><a href="service.html" class="hover:text-blue-600 transition">Service</a></li>
+                <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="hero min-h-[80vh] bg-gradient-to-br from-blue-50 via-slate-50 to-slate-100">
+        <div class="hero-content flex-col lg:flex-row-reverse gap-10 max-w-6xl">
+            <img src="assets/mahfuj.png" class="max-w-sm rounded-lg shadow-2xl w-full object-cover" alt="MD. Mahfujur Rahman" />
+            
+            <div class="text-center lg:text-left">
+                <p class="text-lg text-slate-600 mb-2">Hi, I am</p>
+                <h1 class="text-6xl font-bold text-slate-900 mb-4">MD. Mahfujur Rahman</h1>
+                <p class="text-xl text-slate-700 mb-6 leading-relaxed">
+                    I'm a Professional Web Developer & Designer based in Uttara, Dhaka, Bangladesh. I have rich experience in web site design & building and customization. Also I am good at Machine Learning and Data Science.
+                </p>
+                <div class="flex gap-4 justify-center lg:justify-start flex-wrap">
+                    <a href="contact.html" class="btn bg-blue-600 hover:bg-blue-700 text-white border-none">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                    <a href="contact.html" class="btn btn-outline border-blue-600 text-blue-600 hover:bg-blue-50">
+                        <i class="fas fa-phone"></i> Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="py-16 px-5 bg-white">
+        <div class="container mx-auto max-w-4xl text-center">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="card bg-slate-50 shadow-xl border-l-4 border-blue-600 hover:shadow-2xl transition">
+                    <div class="card-body">
+                        <h2 class="card-title justify-center text-2xl mb-2 text-slate-900">🎯 Mission</h2>
+                        <p class="text-slate-600">To grow as a tech innovator by applying my knowledge in IoT and AI to create smart, practical, and impactful systems that solve real-world problems.</p>
+                    </div>
+                </div>
+                <div class="card bg-slate-50 shadow-xl border-l-4 border-slate-600 hover:shadow-2xl transition">
+                    <div class="card-body">
+                        <h2 class="card-title justify-center text-2xl mb-2 text-slate-900">🚀 Vision</h2>
+                        <p class="text-slate-600">IoT, embedded systems, machine learning, image processing, and software development. I enjoy building real-world solutions that combine hardware, sensors, and intelligent software.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-5 bg-slate-100">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-slate-900">What I Do</h2>
+            <div class="w-16 h-1 bg-blue-600 mx-auto mt-2 rounded"></div>
+            <p class="mt-4 text-slate-600 max-w-2xl mx-auto">As a web designer, I focus on creating visually appealing, responsive, and user-friendly websites that provide seamless interaction across devices.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 border border-slate-200">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">📄</div>
+                    <h3 class="card-title text-slate-900 text-lg">HTML5</h3>
+                    <p class="text-slate-600 text-sm">Build semantic, accessible page structures using modern HTML5 standards.</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 border border-slate-200">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">🎨</div>
+                    <h3 class="card-title text-slate-900 text-lg">CSS</h3>
+                    <p class="text-slate-600 text-sm">Design visually appealing layouts using Flexbox, Grid, and animations.</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 border border-slate-200">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">⚡</div>
+                    <h3 class="card-title text-slate-900 text-lg">JavaScript</h3>
+                    <p class="text-slate-600 text-sm">Develop interactive web experiences with DOM manipulation and events.</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg hover:shadow-2xl transition-all hover:-translate-y-1 border border-slate-200">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">🌊</div>
+                    <h3 class="card-title text-slate-900 text-lg">Tailwind CSS</h3>
+                    <p class="text-slate-600 text-sm">Rapidly build responsive interfaces using utility-first Tailwind CSS.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-10">
+            <a href="service.html" class="link link-primary font-bold text-blue-600 hover:text-blue-700">View All Services &rarr;</a>
+        </div>
+    </section>
+
+    <section class="py-16 px-5 bg-white">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-slate-900">Client Feedback</h2>
+            <div class="w-16 h-1 bg-slate-600 mx-auto mt-2 rounded"></div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center max-w-4xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+                <div class="card bg-slate-50 shadow-xl border border-slate-200 hover:shadow-2xl transition">
+                    <div class="card-body">
+                        <div class="rating rating-sm mb-2">
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600">"Mahfujur delivered the web design project on time with excellent quality. His attention to responsive design and user experience was outstanding!"</p>
+                        <div class="card-actions justify-end mt-4">
+                            <div class="badge badge-outline">Satisfied Client</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card bg-slate-50 shadow-xl border border-slate-200 hover:shadow-2xl transition">
+                    <div class="card-body">
+                        <div class="rating rating-sm mb-2">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600">"Great eye for design and very professional communication. The final product exceeded our expectations. Highly recommended!"</p>
+                        <div class="card-actions justify-end mt-4">
+                            <div class="badge badge-outline">Project Lead</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center p-10 bg-slate-900 text-slate-100 mt-auto">
+        <aside>
+            <p class="font-bold text-lg">Mahfujur.Dev</p> 
+            <p>Copyright © 2026 - All rights reserved</p>
+        </aside>
+    </footer>
+
+</body>
+</html>

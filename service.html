@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Services - Web Development, Design, and SEO">
+    <title>Services - Personal Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+        
+        .process-card {
+            transition: all 0.3s ease;
+        }
+        
+        .process-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .process-number {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            font-weight: bold;
+            color: white;
+            box-shadow: 0 10px 30px rgba(59, 130, 246, 0.3);
+        }
+        
+        .process-connector {
+            height: 4px;
+            background: linear-gradient(90deg, #3b82f6 0%, #64748b 100%);
+            flex: 1;
+            margin: 0 20px;
+            position: relative;
+            top: -40px;
+        }
+        
+        .process-connector::after {
+            content: '→';
+            position: absolute;
+            right: -15px;
+            top: -18px;
+            font-size: 28px;
+            color: #3b82f6;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .process-connector {
+                width: 4px;
+                height: 60px;
+                margin: 0;
+                top: 0;
+                left: 40px;
+            }
+            
+            .process-connector::after {
+                content: '↓';
+                right: -15px;
+                top: 25px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-slate-50 flex flex-col min-h-screen">
+
+    <nav class="navbar bg-white shadow-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 border border-slate-200">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html" class="active font-bold text-blue-600">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-xl font-bold text-blue-600">Mahfujur.Dev</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+                <li><a href="portfolio.html" class="hover:text-blue-600 transition">Portfolio</a></li>
+                <li><a href="service.html" class="font-bold border-b-2 border-blue-600 text-blue-600">Service</a></li>
+                <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="bg-slate-100 py-16 text-center border-b border-slate-300">
+        <h1 class="text-4xl font-bold text-slate-900">What I Offer</h1>
+        <p class="mt-4 text-slate-600 max-w-2xl mx-auto">High-quality services tailored to your specific needs. From code to design, I've got you covered.</p>
+    </section>
+
+    <section class="py-16 px-5 bg-white">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:border-blue-600 transition duration-300">
+                    <div class="card-body">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mb-4">💻</div>
+                        <h2 class="card-title text-slate-900">Web Development</h2>
+                        <p class="text-slate-600">Custom websites built with React, HTML5, and Tailwind CSS. Fast, responsive, and SEO-friendly.</p>
+                        <ul class="list-disc list-inside mt-4 text-sm text-slate-600 space-y-1">
+                            <li>Landing Pages</li>
+                            <li>E-commerce Stores</li>
+                            <li>Portfolio Sites</li>
+                        </ul>
+                        <div class="card-actions justify-end mt-4">
+                            <button class="btn btn-sm btn-outline border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:border-slate-600 transition duration-300">
+                    <div class="card-body">
+                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 text-2xl mb-4">🎨</div>
+                        <h2 class="card-title text-slate-900">UI/UX Design</h2>
+                        <p class="text-slate-600">User-centric designs that look great and work perfectly. I create wireframes, prototypes, and final UI.</p>
+                        <ul class="list-disc list-inside mt-4 text-sm text-slate-600 space-y-1">
+                            <li>Mobile App Design</li>
+                            <li>Web Interface</li>
+                            <li>User Research</li>
+                        </ul>
+                        <div class="card-actions justify-end mt-4">
+                            <button class="btn btn-sm btn-outline border-slate-600 text-slate-600 hover:bg-slate-600 hover:text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:border-blue-500 transition duration-300">
+                    <div class="card-body">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-2xl mb-4">📈</div>
+                        <h2 class="card-title text-slate-900">SEO Optimization</h2>
+                        <p class="text-slate-600">Get found on Google. I optimize your site structure, meta tags, and content for better ranking.</p>
+                        <ul class="list-disc list-inside mt-4 text-sm text-slate-600 space-y-1">
+                            <li>Keyword Research</li>
+                            <li>On-Page SEO</li>
+                            <li>Performance Tuning</li>
+                        </ul>
+                        <div class="card-actions justify-end mt-4">
+                            <button class="btn btn-sm btn-outline border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:border-blue-600 transition duration-300">
+                    <div class="card-body">
+                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-2xl mb-4">🔗</div>
+                        <h2 class="card-title text-slate-900">API Integration</h2>
+                        <p class="text-slate-600">Connecting your website to third-party services like payment gateways, maps, and social media.</p>
+                        <div class="card-actions justify-end mt-4">
+                            <button class="btn btn-sm btn-outline border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:border-slate-600 transition duration-300">
+                    <div class="card-body">
+                        <div class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-600 text-2xl mb-4">✍️</div>
+                        <h2 class="card-title text-slate-900">Content Writing</h2>
+                        <p class="text-slate-600">Engaging, SEO-optimized content for your blog, website, or product descriptions.</p>
+                        <div class="card-actions justify-end mt-4">
+                            <button class="btn btn-sm btn-outline border-slate-600 text-slate-600 hover:bg-slate-600 hover:text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:border-blue-500 transition duration-300">
+                    <div class="card-body">
+                        <div class="w-12 h-12 bg-blue-50 rounded-full flex items-center justify-center text-blue-500 text-2xl mb-4">🛠️</div>
+                        <h2 class="card-title text-slate-900">Support & Fixes</h2>
+                        <p class="text-slate-600">Regular updates, bug fixes, and security checks to keep your website running smoothly.</p>
+                        <div class="card-actions justify-end mt-4">
+                            <button class="btn btn-sm btn-outline border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- New Client Testimonials Section -->
+    <section class="py-16 px-5 bg-slate-100">
+        <div class="container mx-auto max-w-6xl">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-slate-900 mb-4">What My Clients Say</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto rounded"></div>
+                <p class="mt-6 text-slate-600 max-w-2xl mx-auto">I'm proud to work with amazing clients who trust my expertise and dedication to quality work.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-2xl transition duration-300">
+                    <div class="card-body">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center text-white text-xl font-bold">SA</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Sarah Anderson</h3>
+                                <p class="text-sm text-slate-500">E-commerce Owner</p>
+                            </div>
+                        </div>
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"Mahfujur transformed my vision into a stunning e-commerce website. His attention to detail and responsive design skills are exceptional. My conversion rate increased by 40% after the launch!"</p>
+                        <div class="badge badge-outline border-blue-600 text-blue-600">Web Development</div>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-2xl transition duration-300">
+                    <div class="card-body">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-slate-400 to-slate-600 flex items-center justify-center text-white text-xl font-bold">JM</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">James Mitchell</h3>
+                                <p class="text-sm text-slate-500">Startup Founder</p>
+                            </div>
+                        </div>
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"Working with Mahfujur was a game-changer for our startup. He delivered our MVP on time and provided excellent technical support. Highly professional and communicative!"</p>
+                        <div class="badge badge-outline border-slate-600 text-slate-600">UI/UX Design</div>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-2xl transition duration-300">
+                    <div class="card-body">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center text-white text-xl font-bold">EC</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Emma Chen</h3>
+                                <p class="text-sm text-slate-500">Marketing Manager</p>
+                            </div>
+                        </div>
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-3" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"The SEO optimization work Mahfujur did for our website was incredible. Our organic traffic doubled within 3 months! Very knowledgeable and results-driven."</p>
+                        <div class="badge badge-outline border-purple-600 text-purple-600">SEO Optimization</div>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-2xl transition duration-300">
+                    <div class="card-body">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center text-white text-xl font-bold">MR</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Michael Rodriguez</h3>
+                                <p class="text-sm text-slate-500">Tech Director</p>
+                            </div>
+                        </div>
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-4" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"The API integration work was flawless. Mahfujur integrated multiple third-party services smoothly without any issues. Great documentation and support!"</p>
+                        <div class="badge badge-outline border-green-600 text-green-600">API Integration</div>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-2xl transition duration-300">
+                    <div class="card-body">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-pink-400 to-pink-600 flex items-center justify-center text-white text-xl font-bold">LP</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">Laura Peterson</h3>
+                                <p class="text-sm text-slate-500">Content Creator</p>
+                            </div>
+                        </div>
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-5" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-5" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-5" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-5" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-5" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"Mahfujur helped me with website maintenance and provided excellent support. The response time for bug fixes is amazing. I feel confident my site is in good hands!"</p>
+                        <div class="badge badge-outline border-pink-600 text-pink-600">Support & Maintenance</div>
+                    </div>
+                </div>
+
+                <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-2xl transition duration-300">
+                    <div class="card-body">
+                        <div class="flex items-center gap-4 mb-4">
+                            <div class="w-14 h-14 rounded-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center text-white text-xl font-bold">DK</div>
+                            <div>
+                                <h3 class="font-bold text-slate-900">David Kumar</h3>
+                                <p class="text-sm text-slate-500">Business Owner</p>
+                            </div>
+                        </div>
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-6" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"The content writing service was exactly what we needed. SEO-optimized, engaging, and perfect for our audience. Mahfujur really understands what makes good content!"</p>
+                        <div class="badge badge-outline border-orange-600 text-orange-600">Content Writing</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="mt-12 text-center">
+                <p class="text-slate-600 text-lg mb-6">Join hundreds of satisfied clients who've transformed their online presence</p>
+                <a href="contact.html" class="btn bg-blue-600 hover:bg-blue-700 text-white border-none btn-lg">
+                    Start Your Project Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- New Beautiful Process Section -->
+    <section class="py-20 px-5 bg-gradient-to-br from-blue-50 via-slate-50 to-blue-50">
+        <div class="container mx-auto max-w-7xl">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-slate-900 mb-4">How I Work With You</h2>
+                <p class="text-lg text-slate-600 max-w-2xl mx-auto">A streamlined process designed to deliver exceptional results while keeping you informed every step of the way.</p>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-600 to-slate-600 mx-auto mt-6 rounded-full"></div>
+            </div>
+
+            <!-- Desktop Process Flow -->
+            <div class="hidden lg:flex items-center justify-between mb-16">
+                
+                <div class="process-card flex flex-col items-center w-1/4">
+                    <div class="process-number mb-4">1️⃣</div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Discovery & Consultation</h3>
+                        <p class="text-slate-600 text-sm">We discuss your goals, requirements, and vision. I listen carefully to understand your needs.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector"></div>
+
+                <div class="process-card flex flex-col items-center w-1/4">
+                    <div class="process-number mb-4">2️⃣</div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Planning & Strategy</h3>
+                        <p class="text-slate-600 text-sm">I create a detailed proposal with timeline, deliverables, and pricing. Full transparency guaranteed.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector"></div>
+
+                <div class="process-card flex flex-col items-center w-1/4">
+                    <div class="process-number mb-4">3️⃣</div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Development & Execution</h3>
+                        <p class="text-slate-600 text-sm">I build your project with regular updates. You get progress reports and demo versions.</p>
+                    </div>
+                </div>
+
+                <div class="process-connector"></div>
+
+                <div class="process-card flex flex-col items-center w-1/4">
+                    <div class="process-number mb-4">4️⃣</div>
+                    <div class="text-center">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Launch & Support</h3>
+                        <p class="text-slate-600 text-sm">Final delivery with training. Ongoing support and maintenance for your peace of mind.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Mobile Process Flow -->
+            <div class="lg:hidden space-y-8 mb-16">
+                
+                <div class="process-card">
+                    <div class="flex items-start gap-6">
+                        <div class="process-number flex-shrink-0">1️⃣</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Discovery & Consultation</h3>
+                            <p class="text-slate-600">We discuss your goals, requirements, and vision. I listen carefully to understand your needs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-3xl text-blue-600">↓</div>
+
+                <div class="process-card">
+                    <div class="flex items-start gap-6">
+                        <div class="process-number flex-shrink-0">2️⃣</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Planning & Strategy</h3>
+                            <p class="text-slate-600">I create a detailed proposal with timeline, deliverables, and pricing. Full transparency guaranteed.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-3xl text-blue-600">↓</div>
+
+                <div class="process-card">
+                    <div class="flex items-start gap-6">
+                        <div class="process-number flex-shrink-0">3️⃣</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Development & Execution</h3>
+                            <p class="text-slate-600">I build your project with regular updates. You get progress reports and demo versions.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="text-center text-3xl text-blue-600">↓</div>
+
+                <div class="process-card">
+                    <div class="flex items-start gap-6">
+                        <div class="process-number flex-shrink-0">4️⃣</div>
+                        <div>
+                            <h3 class="text-xl font-bold text-slate-900 mb-2">Launch & Support</h3>
+                            <p class="text-slate-600">Final delivery with training. Ongoing support and maintenance for your peace of mind.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Benefits Section -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-600 text-center hover:shadow-xl transition">
+                    <div class="text-4xl mb-3">⏱️</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">On Time Delivery</h3>
+                    <p class="text-slate-600">I respect your timeline and deliver projects punctually with quality maintained.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-slate-600 text-center hover:shadow-xl transition">
+                    <div class="text-4xl mb-3">💬</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Clear Communication</h3>
+                    <p class="text-slate-600">Regular updates and transparent discussions ensure you're always in the loop.</p>
+                </div>
+
+                <div class="bg-white rounded-xl shadow-lg p-8 border-t-4 border-blue-500 text-center hover:shadow-xl transition">
+                    <div class="text-4xl mb-3">🎯</div>
+                    <h3 class="text-xl font-bold text-slate-900 mb-2">Quality Assured</h3>
+                    <p class="text-slate-600">Every project goes through rigorous testing before delivery to ensure excellence.</p>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="bg-gradient-to-r from-blue-600 to-blue-700 rounded-2xl p-8 md:p-12 text-center shadow-2xl">
+                <h3 class="text-3xl font-bold text-white mb-4">Ready to Get Started?</h3>
+                <p class="text-blue-100 mb-8 max-w-2xl mx-auto">Let's discuss your project and create something amazing together. I'm excited to hear about your ideas!</p>
+                <a href="contact.html" class="btn btn-lg bg-white hover:bg-slate-100 text-blue-600 border-none shadow-lg font-bold">
+                    <i class="fas fa-envelope"></i> Contact Me Today
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center p-10 bg-slate-900 text-slate-100 mt-auto">
+        <aside>
+            <p class="font-bold text-lg">Mahfujur.Dev</p> 
+            <p>Copyright © 2026 - All rights reserved</p>
+        </aside>
+    </footer>
+
+</body>
+</html>

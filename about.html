@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="About Md. Mahfujur Rahman - Experience and Skills">
+    <title>About - Personal Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 flex flex-col min-h-screen">
+
+    <nav class="navbar bg-white shadow-md sticky top-0 z-50 border-b border-slate-200">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 border border-slate-200">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html" class="active font-bold text-blue-600">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-xl font-bold text-blue-600">Mahfujur.Dev</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+                <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="about.html" class="font-bold border-b-2 border-blue-600 text-blue-600">About</a></li>
+                <li><a href="portfolio.html" class="hover:text-blue-600 transition">Portfolio</a></li>
+                <li><a href="service.html" class="hover:text-blue-600 transition">Service</a></li>
+                <li><a href="contact.html" class="hover:text-blue-600 transition">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero bg-gradient-to-r from-blue-50 to-slate-100 py-12">
+        <div class="hero-content text-center">
+            <div class="max-w-md">
+                <h1 class="text-5xl font-bold text-slate-900">About Me</h1>
+                <p class="py-6 text-slate-600">Discover my journey, my experience, and the skills I bring to the table.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-5 bg-white">
+        <div class="container mx-auto flex flex-col lg:flex-row items-center gap-12">
+            
+            <div class="w-full lg:w-1/2">
+                <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop" class="rounded-lg shadow-2xl w-full object-cover h-96" alt="Working on Laptop" />
+            </div>
+
+            <div class="w-full lg:w-1/2">
+                <h2 class="text-3xl font-bold mb-4 text-slate-900">Who I Am</h2>
+                <div class="w-16 h-1 bg-blue-600 mb-6 rounded"></div>
+                <p class="mb-4 text-slate-600 leading-relaxed">
+                    I am Md. Mahfujur Rahman, a 4th-year Computer Science and Engineering student at Daffodil International University, Dhaka. My academic interests include IoT, embedded systems, machine learning, image processing, and software development.
+                </p>
+                <p class="mb-6 text-slate-600 leading-relaxed">
+                    I enjoy building real-world solutions that combine hardware, sensors, and intelligent software to solve everyday problems. My goal is to grow as a tech innovator by applying my knowledge in IoT and AI to create smart, practical, and impactful systems.
+                </p>
+                
+                <div class="grid grid-cols-2 gap-4 mb-6">
+                    <div>
+                        <span class="font-bold text-slate-800">Name:</span> 
+                        <span class="text-slate-600 block">MD. Mahfujur Rahman</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-slate-800">Email:</span> 
+                        <span class="text-slate-600 block">mdmahfuj.cse@gmail.com</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-slate-800">Birth Date:</span> 
+                        <span class="text-slate-600 block">April 20, 2003</span>
+                    </div>
+                    <div>
+                        <span class="font-bold text-slate-800">Location:</span> 
+                        <span class="text-slate-600 block">Uttara, Dhaka, Bangladesh</span>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="btn bg-blue-600 hover:bg-blue-700 text-white border-none">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-5 bg-slate-100">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-slate-900">Technical Skills</h2>
+            <div class="w-16 h-1 bg-slate-600 mx-auto mt-2 rounded"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">📄</div>
+                    <h3 class="font-bold text-slate-900">HTML5</h3>
+                    <p class="text-sm text-slate-600">Semantic & Accessible</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">🎨</div>
+                    <h3 class="font-bold text-slate-900">CSS & Tailwind</h3>
+                    <p class="text-sm text-slate-600">Responsive Design</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">⚡</div>
+                    <h3 class="font-bold text-slate-900">JavaScript</h3>
+                    <p class="text-sm text-slate-600">Interactive Web Apps</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">🤖</div>
+                    <h3 class="font-bold text-slate-900">Machine Learning</h3>
+                    <p class="text-sm text-slate-600">Image Processing</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">🔧</div>
+                    <h3 class="font-bold text-slate-900">IoT</h3>
+                    <p class="text-sm text-slate-600">Embedded Systems</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">💾</div>
+                    <h3 class="font-bold text-slate-900">Databases</h3>
+                    <p class="text-sm text-slate-600">SQL & Firebase</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">🐍</div>
+                    <h3 class="font-bold text-slate-900">Python</h3>
+                    <p class="text-sm text-slate-600">Data Science</p>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg border border-slate-200 hover:shadow-xl transition">
+                <div class="card-body items-center text-center">
+                    <div class="text-4xl mb-2">📊</div>
+                    <h3 class="font-bold text-slate-900">Problem Solving</h3>
+                    <p class="text-sm text-slate-600">Analytical Skills</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 px-5 bg-white">
+        <div class="container mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900 mb-4">What Clients Say</h2>
+                <div class="w-16 h-1 bg-blue-600 mx-auto mt-2 rounded"></div>
+                <p class="mt-6 text-slate-600 max-w-2xl mx-auto">I'm proud to have worked with amazing clients. Here's what they have to say about my work.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:shadow-2xl transition">
+                    <div class="card-body">
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-1" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"Mahfujur delivered the web design project on time with excellent quality. His attention to responsive design and user experience was outstanding! I would definitely work with him again."</p>
+                        <div class="card-actions justify-between items-center">
+                            <span class="font-semibold text-slate-800">Client A</span>
+                            <div class="badge badge-outline border-blue-600 text-blue-600">Web Design</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card bg-slate-50 shadow-lg border border-slate-200 hover:shadow-2xl transition">
+                    <div class="card-body">
+                        <div class="rating rating-sm mb-3">
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                            <input type="radio" name="rating-2" class="mask mask-star-2 bg-blue-600" checked disabled />
+                        </div>
+                        <p class="italic text-slate-600 mb-4">"Great eye for design and very professional communication throughout the process. The final product exceeded our expectations. Highly recommended for any web development project!"</p>
+                        <div class="card-actions justify-between items-center">
+                            <span class="font-semibold text-slate-800">Client B</span>
+                            <div class="badge badge-outline border-slate-600 text-slate-600">Development</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center p-10 bg-slate-900 text-slate-100 mt-auto">
+        <aside>
+            <p class="font-bold text-lg">Mahfujur.Dev</p> 
+            <p>Copyright © 2026 - All rights reserved</p>
+        </aside>
+    </footer>
+
+</body>
+</html>
