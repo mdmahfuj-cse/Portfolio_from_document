@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="My Portfolio - Education, Experience, and Skills">
+    <title>Portfolio - Personal Portfolio</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+        body { font-family: 'Poppins', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 flex flex-col min-h-screen text-slate-800">
+
+    <nav class="navbar bg-white shadow-md sticky top-0 z-50 border-b border-slate-200 px-5">
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                </div>
+                <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-white rounded-box w-52 text-slate-800">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="portfolio.html" class="active font-bold text-blue-600 bg-blue-50">Portfolio</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <a href="index.html" class="btn btn-ghost text-xl font-bold text-blue-600">Mahfujur.Dev</a>
+        </div>
+        <div class="navbar-end hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 gap-2 font-medium text-slate-600">
+                <li><a href="index.html" class="hover:text-blue-600 transition">Home</a></li>
+                <li><a href="about.html" class="hover:text-blue-600 transition">About</a></li>
+                <li><a href="portfolio.html" class="font-bold border-b-2 border-blue-600 text-blue-600">Portfolio</a></li>
+                <li><a href="service.html" class="hover:text-blue-600 transition">Service</a></li>
+                <li><a href="contact.html" class="btn btn-sm bg-blue-600 hover:bg-blue-700 text-white rounded-full px-6 border-none">Hire Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="py-16 px-5 text-center bg-white border-b border-slate-200">
+        <h1 class="text-5xl font-bold text-slate-900 mb-3">My Portfolio</h1>
+        <p class="text-slate-500 max-w-2xl mx-auto text-lg">A showcase of my academic background, professional journey, and technical achievements.</p>
+    </section>
+
+    <section class="py-12 px-5">
+        <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-sm border border-slate-200 p-8 hover:shadow-md transition duration-300">
+            <div class="flex items-center gap-3 mb-6 border-b border-slate-100 pb-4">
+                <div class="w-10 h-10 rounded-full bg-blue-50 text-blue-600 flex items-center justify-center text-xl"><i class="fas fa-user"></i></div>
+                <h2 class="text-xl font-bold text-slate-900">Personal Information</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-12">
+                <div><span class="block text-xs font-bold text-slate-400 uppercase mb-1">Full Name</span><p class="font-medium text-slate-800">MD. Mahfujur Rahman</p></div>
+                <div><span class="block text-xs font-bold text-slate-400 uppercase mb-1">Date of Birth</span><p class="font-medium text-slate-800">April 20, 2003</p></div>
+                <div><span class="block text-xs font-bold text-slate-400 uppercase mb-1">Nationality</span><p class="font-medium text-slate-800">Bangladeshi</p></div>
+                <div><span class="block text-xs font-bold text-slate-400 uppercase mb-1">Email</span><p class="font-medium text-slate-800">mdmahfuj.cse@gmail.com</p></div>
+                <div><span class="block text-xs font-bold text-slate-400 uppercase mb-1">Freelance</span><p class="font-medium text-green-600"><i class="fas fa-check-circle text-xs"></i> Available</p></div>
+                <div><span class="block text-xs font-bold text-slate-400 uppercase mb-1">Address</span><p class="font-medium text-slate-800">Uttara, Dhaka, Bangladesh</p></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-4 px-5 max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
+        
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3"><i class="fas fa-graduation-cap text-blue-600"></i> Education</h3>
+            <ol class="relative border-l border-slate-200 ml-3">                  
+                <li class="mb-10 ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white"><i class="fas fa-circle text-[8px] text-blue-600"></i></span>
+                    <h3 class="flex items-center mb-1 text-lg font-bold text-slate-900">BSc in Computer Science & Engineering <span class="bg-blue-100 text-blue-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-3">2021 - 2025</span></h3>
+                    <p class="block mb-2 text-sm font-normal leading-none text-slate-500">Daffodil International University, Dhaka</p>
+                    <p class="mb-4 text-sm font-normal text-slate-600">Coursework covers IoT, machine learning, image processing, databases, and software development.</p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-slate-100 rounded-full -left-3 ring-8 ring-white"><i class="fas fa-circle text-[8px] text-slate-400"></i></span>
+                    <h3 class="flex items-center mb-1 text-lg font-bold text-slate-900">Higher Secondary School Certificate (HSC) <span class="bg-slate-100 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-3">2018 - 2020</span></h3>
+                    <p class="block mb-2 text-sm font-normal leading-none text-slate-500">Uttara Govt. College</p>
+                    <p class="mb-4 text-sm font-normal text-slate-600">Completed in Science background. Strengthened foundation in mathematics and physics.</p>
+                </li>
+                <li class="ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-slate-100 rounded-full -left-3 ring-8 ring-white"><i class="fas fa-circle text-[8px] text-slate-400"></i></span>
+                    <h3 class="flex items-center mb-1 text-lg font-bold text-slate-900">Secondary School Certificate (SSC) <span class="bg-slate-100 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-3">2016 - 2018</span></h3>
+                    <p class="block mb-2 text-sm font-normal leading-none text-slate-500">Uttara High School and College</p>
+                    <p class="text-sm font-normal text-slate-600">Science background. Built analytical and logical thinking foundations.</p>
+                </li>
+            </ol>
+        </div>
+
+        <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+            <h3 class="text-2xl font-bold text-slate-900 mb-8 flex items-center gap-3"><i class="fas fa-briefcase text-blue-600"></i> Working Experience</h3>
+            <ol class="relative border-l border-slate-200 ml-3">                  
+                <li class="mb-10 ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-blue-100 rounded-full -left-3 ring-8 ring-white"><i class="fas fa-check text-xs text-blue-600"></i></span>
+                    <h3 class="flex items-center mb-1 text-lg font-bold text-slate-900">Machine Learning Project Lead <span class="bg-green-100 text-green-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-3">Current</span></h3>
+                    <p class="block mb-2 text-sm font-normal leading-none text-slate-500">Plant Leaf Classification System</p>
+                    <p class="mb-4 text-sm font-normal text-slate-600">Built a 12-class plant leaf classification system using image processing. Preprocessed ~3600 images for high accuracy disease detection.</p>
+                </li>
+                <li class="mb-10 ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-slate-100 rounded-full -left-3 ring-8 ring-white"><i class="fas fa-laptop-code text-xs text-slate-500"></i></span>
+                    <h3 class="flex items-center mb-1 text-lg font-bold text-slate-900">Web Developer <span class="bg-slate-100 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-3">2024</span></h3>
+                    <p class="block mb-2 text-sm font-normal leading-none text-slate-500">Moonlight Cafe Project</p>
+                    <p class="mb-4 text-sm font-normal text-slate-600">Designed a responsive e-commerce page with HTML, CSS, JS. Implemented PHP authentication and dynamic product grid.</p>
+                </li>
+                <li class="ml-6">
+                    <span class="absolute flex items-center justify-center w-6 h-6 bg-slate-100 rounded-full -left-3 ring-8 ring-white"><i class="fas fa-microchip text-xs text-slate-500"></i></span>
+                    <h3 class="flex items-center mb-1 text-lg font-bold text-slate-900">IoT Engineer <span class="bg-slate-100 text-slate-800 text-xs font-medium mr-2 px-2.5 py-0.5 rounded ml-3">2023</span></h3>
+                    <p class="block mb-2 text-sm font-normal leading-none text-slate-500">Smart Pet Feeder</p>
+                    <p class="text-sm font-normal text-slate-600">Developed an automated feeder using Arduino and sensors. Integrated real-time monitoring via Blynk mobile app.</p>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <section class="py-16 px-5">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold text-slate-900 mb-8 pl-2 border-l-4 border-blue-600">Training & Certifications</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="card bg-white shadow-sm border border-slate-200 hover:-translate-y-1 transition duration-300">
+                    <div class="card-body p-6">
+                        <h3 class="font-bold text-slate-900">Web Development Bootcamp</h3>
+                        <p class="text-xs text-slate-500 font-semibold">Online Platform - 2024</p>
+                        <p class="text-sm text-slate-600 mt-2">Comprehensive training on HTML5, CSS3, JS, React, and Tailwind CSS.</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm border border-slate-200 hover:-translate-y-1 transition duration-300">
+                    <div class="card-body p-6">
+                        <h3 class="font-bold text-slate-900">Machine Learning Fundamentals</h3>
+                        <p class="text-xs text-slate-500 font-semibold">Coursera - 2023</p>
+                        <p class="text-sm text-slate-600 mt-2">Supervised/unsupervised learning, neural networks, Python, TensorFlow.</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm border border-slate-200 hover:-translate-y-1 transition duration-300">
+                    <div class="card-body p-6">
+                        <h3 class="font-bold text-slate-900">IoT & Embedded Systems</h3>
+                        <p class="text-xs text-slate-500 font-semibold">DIU University - 2023</p>
+                        <p class="text-sm text-slate-600 mt-2">Arduino, sensors, microcontrollers, and IoT protocols.</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm border border-slate-200 hover:-translate-y-1 transition duration-300">
+                    <div class="card-body p-6">
+                        <h3 class="font-bold text-slate-900">Advanced JavaScript</h3>
+                        <p class="text-xs text-slate-500 font-semibold">Frontend Masters - 2024</p>
+                        <p class="text-sm text-slate-600 mt-2">ES6+, async programming, closures, and advanced DOM manipulation.</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm border border-slate-200 hover:-translate-y-1 transition duration-300">
+                    <div class="card-body p-6">
+                        <h3 class="font-bold text-slate-900">Image Processing</h3>
+                        <p class="text-xs text-slate-500 font-semibold">Online Platform - 2024</p>
+                        <p class="text-sm text-slate-600 mt-2">Object detection and computer vision using Python and OpenCV.</p>
+                    </div>
+                </div>
+                <div class="card bg-white shadow-sm border border-slate-200 hover:-translate-y-1 transition duration-300">
+                    <div class="card-body p-6">
+                        <h3 class="font-bold text-slate-900">Responsive Web Design</h3>
+                        <p class="text-xs text-slate-500 font-semibold">FreeCodeCamp - 2023</p>
+                        <p class="text-sm text-slate-600 mt-2">CSS Grid, Flexbox, mobile-first approach, and accessibility.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pb-16 px-5">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <div class="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-lg">
+                <h3 class="text-xl font-bold mb-4 flex items-center gap-2"><i class="fas fa-bullseye text-blue-400"></i> Professional Goal</h3>
+                <p class="text-slate-300 text-sm leading-relaxed mb-4">
+                    I am committed to continuous learning and staying updated with the latest technologies. Currently, I am pursuing advanced certifications in cloud computing and full-stack development to provide better solutions to clients.
+                </p>
+                <p class="text-slate-300 text-sm leading-relaxed">
+                    I regularly participate in online courses and workshops to keep pace with industry trends in Web Development, IoT, and AI.
+                </p>
+            </div>
+
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <h3 class="text-xl font-bold mb-6 text-slate-900 flex items-center gap-2"><i class="fas fa-star text-yellow-500"></i> Key Skills</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="badge badge-lg bg-blue-50 text-blue-700 border-blue-100 p-4 font-medium">Web Development</span>
+                    <span class="badge badge-lg bg-slate-50 text-slate-700 border-slate-200 p-4 font-medium">HTML5 & CSS</span>
+                    <span class="badge badge-lg bg-blue-50 text-blue-700 border-blue-100 p-4 font-medium">JavaScript</span>
+                    <span class="badge badge-lg bg-slate-50 text-slate-700 border-slate-200 p-4 font-medium">Responsive Design</span>
+                    <span class="badge badge-lg bg-blue-50 text-blue-700 border-blue-100 p-4 font-medium">IoT Systems</span>
+                    <span class="badge badge-lg bg-slate-50 text-slate-700 border-slate-200 p-4 font-medium">Machine Learning</span>
+                    <span class="badge badge-lg bg-blue-50 text-blue-700 border-blue-100 p-4 font-medium">Image Processing</span>
+                    <span class="badge badge-lg bg-slate-50 text-slate-700 border-slate-200 p-4 font-medium">Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer footer-center p-10 bg-slate-900 text-slate-100 mt-auto">
+        <aside>
+            <p class="font-bold text-lg">Mahfujur.Dev</p> 
+            <p>Copyright © 2026 - All rights reserved</p>
+            <div id="clockDisplay" class="font-mono text-blue-300 mt-2 bg-slate-800 px-4 py-1 rounded-full text-sm"></div>
+        </aside>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
